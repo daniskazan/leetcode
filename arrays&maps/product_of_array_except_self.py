@@ -8,7 +8,6 @@ class Solution:
         for i in range(len(nums)):
             res_lst[i] *= left_product
             left_product *= nums[i]
-
         for i in range(len(nums) - 1, -1, -1):
             curr = nums[i]
             res_lst[i] *= right_product
